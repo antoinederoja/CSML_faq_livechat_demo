@@ -1,0 +1,24 @@
+{
+  "id": "b9cc15a1-094b-4830-b569-6e78fb9919d9",
+  "name": "Demo_faq_livechat",
+  "description": null,
+  "default_flow": "Default",
+  "flows": [
+    {
+      "name": "Default",
+      "description": "Default custom flow",
+      "commands": []
+    },
+    {
+      "name": "Faq",
+      "commands": []
+    },
+    {
+      "name": "Livechat",
+      "commands": []
+    }
+  ],
+  "files": [],
+  "functions": [],
+  "apps": []
+}
