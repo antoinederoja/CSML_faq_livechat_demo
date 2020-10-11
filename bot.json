@@ -1,6 +1,6 @@
 {
   "id": "b9cc15a1-094b-4830-b569-6e78fb9919d9",
-  "name": "Demo_faq_livechat",
+  "name": "faq",
   "description": null,
   "default_flow": "Default",
   "flows": [
@@ -11,10 +11,6 @@
     },
     {
       "name": "Faq",
-      "commands": []
-    },
-    {
-      "name": "Livechat",
       "commands": []
     }
   ],
