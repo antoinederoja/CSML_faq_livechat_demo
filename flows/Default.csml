@@ -1,22 +1,7 @@
 start:
   say "Hello, I'm here to help you🤗!"
   if (!user) goto getUserInfo
-  goto menu
-
-menu:
-  say Question("What can I do for you?",
-    button_type="quick_reply",
-    buttons=[
-      Button("Check Frequently asked questions", accepts=["faq", "questions"]) as btn_faq,
-      Button("Talk to an actual person", accepts=["livechat", "chat"]) as btn_livechat
-  ])
-  hold
-  if (event match btn_faq) goto flow Faq
-  else if (event match btn_livechat) goto flow Livechat
-  else {
-    say "I'll understand you way better if you click on one of these two buttons 🙃"
-    goto menu
-  }
+  goto flow Faq
 
 getUserInfo:
   remember user = {}
@@ -36,4 +21,4 @@ getUserInfo:
     do user.email = event
   }
   say "Great, thanks!"
-  goto menu
+  goto flow Faq
